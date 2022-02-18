@@ -1,9 +1,12 @@
 {
-  "name": "lnsd",
+  "name": "nx-plugins",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "nx": "nx"
+    "nx": "nx",
+    "lint": "nx run-many --all --target=lint",
+    "test": "nx run-many --all --target=test",
+    "build": "nx run-many --all --target=build"
   },
   "private": true,
   "devDependencies": {
