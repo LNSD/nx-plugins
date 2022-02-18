@@ -2,7 +2,9 @@
   "name": "lnsd",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "nx": "nx"
+  },
   "private": true,
   "devDependencies": {
     "@commitlint/cli": "^16.2.1",
@@ -35,5 +37,8 @@
   },
   "dependencies": {
     "tslib": "^2.0.0"
+  },
+  "volta": {
+    "node": "16.14.0"
   }
 }
