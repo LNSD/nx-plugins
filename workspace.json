@@ -1,4 +1,7 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "playwright": "packages/playwright",
+    "playwright-e2e": "packages/playwright-e2e"
+  }
 }
