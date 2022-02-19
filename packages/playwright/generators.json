@@ -9,6 +9,11 @@
       "description": "Initialize the @lnsd/nx-playwright plugin",
       "aliases": ["ng-add"],
       "hidden": true
+    },
+    "playwright-project": {
+      "factory": "./src/generators/playwright-project/playwright-project#playwrightProjectSchematic",
+      "schema": "./src/generators/playwright-project/schema.json",
+      "description": "Add a Playwright E2E Project"
     }
   },
   "generators": {
@@ -17,6 +22,12 @@
       "schema": "./src/generators/init/schema.json",
       "description": "Initialize the @lnsd/nx-playwright plugin",
       "aliases": ["ng-add"],
+      "hidden": true
+    },
+    "playwright-project": {
+      "factory": "./src/generators/playwright-project/playwright-project#playwrightProjectGenerator",
+      "schema": "./src/generators/playwright-project/schema.json",
+      "description": "Add a Playwright E2E Project",
       "hidden": true
     }
   }

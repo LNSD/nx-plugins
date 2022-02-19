@@ -1,0 +1,18 @@
+import { expect, test } from '@playwright/test';
+
+import { AppPage } from './support/app.po';
+
+test.describe('<%= project %>', () => {
+  test('should display welcome message', async ({ page }) => {
+    /* Given */
+    const app = new AppPage(page);
+
+    /* When */
+    await page.goto('/');
+
+    /* Then */
+    await expect(app.getGreeting()).resolves.toContain(
+      'Welcome <%= project %>',
+    );
+  });
+});
