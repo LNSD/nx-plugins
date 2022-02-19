@@ -27,7 +27,8 @@
         "packageJson": "packages/playwright/package.json",
         "main": "packages/playwright/src/index.ts",
         "assets": [
-          "packages/playwright/*.md",
+          "packages/playwright/README.md",
+          "packages/playwright/LICENSE",
           {
             "input": "./packages/playwright/src",
             "glob": "**/!(*.ts)",
