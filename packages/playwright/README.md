@@ -1,7 +1,9 @@
-# playwright
+<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx.png" width="600" alt="Nx - Smart, Fast and Extensible Build System"></p>
 
-This library was generated with [Nx](https://nx.dev).
+<hr>
 
-## Running unit tests
+# Nx: Smart, Fast and Extensible Build System
 
-Run `nx test playwright` to execute the unit tests via [Jest](https://jestjs.io).
+Nx is a next generation build system with first class monorepo support and powerful integrations.
+
+This package is a [Playwright plugin for Nx]().
