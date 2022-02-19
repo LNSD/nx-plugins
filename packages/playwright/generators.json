@@ -1,12 +1,23 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "name": "playwright",
-  "version": "0.0.1",
+  "name": "Nx Playwright",
+  "version": "0.1.0",
+  "schematics": {
+    "init": {
+      "factory": "./src/generators/init/init#playwrightInitSchematic",
+      "schema": "./src/generators/init/schema.json",
+      "description": "Initialize the @lnsd/nx-playwright plugin",
+      "aliases": ["ng-add"],
+      "hidden": true
+    }
+  },
   "generators": {
-    "playwright": {
-      "factory": "./src/generators/playwright/generator",
-      "schema": "./src/generators/playwright/schema.json",
-      "description": "playwright generator"
+    "init": {
+      "factory": "./src/generators/init/init#playwrightInitGenerator",
+      "schema": "./src/generators/init/schema.json",
+      "description": "Initialize the @lnsd/nx-playwright plugin",
+      "aliases": ["ng-add"],
+      "hidden": true
     }
   }
 }
