@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generator:playwright-project Playwright Project nested should set right path names in \`tsconfig.e2e.json\` 1`] = `
+Object {
+  "compilerOptions": Object {
+    "allowJs": true,
+    "outDir": "../../../dist/out-tsc",
+    "sourceMap": false,
+    "types": Array [
+      "node",
+    ],
+  },
+  "extends": "../../../tsconfig.base.json",
+  "include": Array [
+    "src/**/*.ts",
+    "src/**/*.js",
+  ],
+}
+`;
+
+exports[`generator:playwright-project Playwright Project should set right path names in \`tsconfig.e2e.json\` 1`] = `
+Object {
+  "compilerOptions": Object {
+    "allowJs": true,
+    "outDir": "../../dist/out-tsc",
+    "sourceMap": false,
+    "types": Array [
+      "node",
+    ],
+  },
+  "extends": "../../tsconfig.base.json",
+  "include": Array [
+    "src/**/*.ts",
+    "src/**/*.js",
+  ],
+}
+`;

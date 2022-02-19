@@ -1,0 +1,13 @@
+import { Locator, Page } from '@playwright/test';
+
+export class AppPage {
+  private readonly greeting: Locator;
+
+  constructor(readonly page: Page) {
+    this.greeting = page.locator('h1');
+  }
+
+  async getGreeting() {
+    return this.greeting.innerText();
+  }
+}
