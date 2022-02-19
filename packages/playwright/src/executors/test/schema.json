@@ -14,6 +14,11 @@
       "type": "string",
       "description": "The path to the output directory for artifacts produced by tests."
     },
+    "watch": {
+      "type": "boolean",
+      "description": "Recompile and run tests when files change.",
+      "default": false
+    },
     "devServerTarget": {
       "type": "string",
       "description": "Dev server target to run tests against."
@@ -32,6 +37,10 @@
       "type": "boolean",
       "description": "Whether or not Cypress should run its tests in parallel (CI only)",
       "default": false
+    },
+    "baseUrl": {
+      "type": "string",
+      "description": "The address (with the port) which your application is running on"
     },
     "browser": {
       "type": "string",
