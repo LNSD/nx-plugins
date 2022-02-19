@@ -41,6 +41,11 @@
           },
           {
             "input": "./packages/playwright",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./packages/playwright",
             "glob": "executors.json",
             "output": "."
           }
