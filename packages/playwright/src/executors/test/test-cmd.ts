@@ -1,7 +1,7 @@
 /**
  * See: https://playwright.dev/docs/test-cli#reference
  */
-import { CommandOptions, runCommand } from '../../cli-wrapper/cmd';
+import { CommandOptions, runCommand } from '../../utils/cmd';
 
 export interface TestOptions {
   headed?: boolean;
