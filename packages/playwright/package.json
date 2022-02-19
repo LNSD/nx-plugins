@@ -1,5 +1,5 @@
 {
-  "name": "@lnsd/playwright",
+  "name": "@lnsd/nx-playwright",
   "version": "1.0.0",
   "main": "src/index.js",
   "executors": "./executors.json",
