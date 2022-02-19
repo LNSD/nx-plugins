@@ -5,6 +5,7 @@ specifiers:
   '@commitlint/config-conventional': ^16.2.1
   '@commitlint/config-nx-scopes': ^16.2.1
   '@commitlint/prompt-cli': ^16.2.1
+  '@faker-js/faker': ^6.0.0-alpha.6
   '@nrwl/cli': 13.8.2
   '@nrwl/devkit': 13.8.2
   '@nrwl/eslint-plugin-nx': 13.8.2
@@ -38,6 +39,7 @@ devDependencies:
   '@commitlint/config-conventional': 16.2.1
   '@commitlint/config-nx-scopes': 16.2.1_@nrwl+tao@13.8.2
   '@commitlint/prompt-cli': 16.2.1
+  '@faker-js/faker': 6.0.0-alpha.6
   '@nrwl/cli': 13.8.2
   '@nrwl/devkit': 13.8.2
   '@nrwl/eslint-plugin-nx': 13.8.2_6f7ffd8ae165f7f1947131862b9ce494
@@ -695,6 +697,14 @@ packages:
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@faker-js/faker/6.0.0-alpha.6:
+    resolution:
+      {
+        integrity: sha512-+jatKq8wYwOgCpVQ0wE4t9BglS16qJH/Nu4WjPU+ABTywivTY8BCsD1XIZhw9iXDq3t1InyiXmz+R70TcUMbrg==,
+      }
+    engines: { node: '>=14.0.0', npm: '>=7.0.0' }
     dev: true
 
   /@humanwhocodes/config-array/0.9.3:
