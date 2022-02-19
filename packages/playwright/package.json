@@ -1,6 +1,17 @@
 {
   "name": "@lnsd/playwright",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "src/index.js",
-  "executors": "./executors.json"
+  "executors": "./executors.json",
+  "dependencies": {
+    "@nrwl/devkit": "*"
+  },
+  "peerDependencies": {
+    "playwright": "^1.18.0"
+  },
+  "peerDependenciesMeta": {
+    "playwright": {
+      "optional": true
+    }
+  }
 }
