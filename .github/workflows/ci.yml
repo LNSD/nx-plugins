@@ -23,7 +23,7 @@ jobs:
       - run: pnpm install
       - run: pnpx nx affected --target=lint
       - run: pnpx nx affected --target=build
-      - run: pnpx nx affected --target=test
+      - run: pnpx nx affected --target=test --codeCoverage --coverageReporters=json,text,text-summary
 
   pr:
     runs-on: ubuntu-latest
@@ -45,4 +45,8 @@ jobs:
       - run: pnpm install
       - run: pnpx nx affected --target=lint
       - run: pnpx nx affected --target=build
-      - run: pnpx nx affected --target=test
+      - run: pnpx nx affected --target=test --codeCoverage --coverageReporters=json,text,text-summary
+      - name: Publish code coverage report
+        uses: codecov/codecov-action@v2
+        with:
+          directory: coverage/packages
