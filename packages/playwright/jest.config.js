@@ -12,4 +12,9 @@ module.exports = {
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
   coverageDirectory: '../../coverage/packages/playwright',
+  collectCoverageFrom: [
+    '<rootDir>/src/**/*.{ts,tsx,js,jsx}',
+    '!**/__tests__/**',
+    '!**/__mocks__/**',
+  ],
 };
