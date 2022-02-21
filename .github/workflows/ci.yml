@@ -24,6 +24,11 @@ jobs:
       - run: pnpx nx affected --target=lint
       - run: pnpx nx affected --target=build
       - run: pnpx nx affected --target=test --codeCoverage --coverageReporters=json,text,text-summary
+      - name: Publish code coverage report
+        if: contains(github.ref, 'main')
+        uses: codecov/codecov-action@v2
+        with:
+          directory: coverage/packages
 
   pr:
     runs-on: ubuntu-latest
