@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ !contains(github.event.head_commit.message, '[ci skip]') && github.event_name != 'pull_request' }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: Derive appropriate SHAs for base and head for `nx affected` commands
@@ -16,7 +16,7 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: 6.31.0
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: '16'
           cache: 'pnpm'
@@ -26,7 +26,7 @@ jobs:
       - run: pnpx nx affected --target=test --codeCoverage --coverageReporters=json,text,text-summary
       - name: Publish code coverage report
         if: contains(github.ref, 'main')
-        uses: codecov/codecov-action@v2
+        uses: codecov/codecov-action@v3
         with:
           directory: coverage/packages
 
@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ !contains(github.event.head_commit.message, '[ci skip]') && github.event_name == 'pull_request' }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: 0
@@ -43,7 +43,7 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: 6.31.0
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         with:
           node-version: '16'
           cache: 'pnpm'
@@ -52,6 +52,6 @@ jobs:
       - run: pnpx nx affected --target=build
       - run: pnpx nx affected --target=test --codeCoverage --coverageReporters=json,text,text-summary
       - name: Publish code coverage report
-        uses: codecov/codecov-action@v2
+        uses: codecov/codecov-action@v3
         with:
           directory: coverage/packages
