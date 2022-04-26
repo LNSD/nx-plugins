@@ -1,6 +1,6 @@
 module.exports = {
   displayName: 'playwright',
-  preset: '../../jest.preset.js',
+
   globals: {
     'ts-jest': {
       tsconfig: '<rootDir>/tsconfig.spec.json',
@@ -17,4 +17,5 @@ module.exports = {
     '!**/__tests__/**',
     '!**/__mocks__/**',
   ],
+  preset: '../../jest.preset.ts',
 };

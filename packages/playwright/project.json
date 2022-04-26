@@ -14,7 +14,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/packages/playwright"],
       "options": {
-        "jestConfig": "packages/playwright/jest.config.js",
+        "jestConfig": "packages/playwright/jest.config.ts",
         "passWithNoTests": true
       }
     },
